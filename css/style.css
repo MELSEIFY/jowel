@@ -174,7 +174,7 @@ p{
   margin-bottom: -7%;
 }
 
-@media screen and (max-width:787px){
+@media screen and (max-width:992px){
   .main-info{  margin-bottom:unset;
   }
 }

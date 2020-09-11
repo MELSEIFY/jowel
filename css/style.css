@@ -169,8 +169,15 @@ p{
   color: #CA173B;	
 }	
 
+.main-info{
+  margin-top: 5%;
+  margin-bottom: -7%;
+}
 
-
+@media screen and (max-width:787px){
+  .main-info{  margin-bottom:unset;
+  }
+}
 
 
 

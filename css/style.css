@@ -10,7 +10,7 @@ p{
 .about-desc h2{
     color:#DC143C;
     font-size:35px;
-    font-weight: 900;
+    font-weight: 800;
 }
 .social-icon {
     width: 40%;
@@ -50,8 +50,12 @@ p{
 #service{
     background-color: #F1F1F1;
 }
-#service h5{
+#service h2{
+  font-weight: 700;
+}
+#service h5 {
     font-size: 25px;
+    font-weight: 600;
 }
 .main-title{
     font-size:25px ;
@@ -90,7 +94,7 @@ p{
 }
   .service-item:hover .icon:after{
     border: #DC143C 4px solid; 
-     width: 120px;
+    width: 120px;
     height: 120px;
     left: -10px;
     top: -10px;

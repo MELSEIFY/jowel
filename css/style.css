@@ -10,7 +10,7 @@ p{
 .about-desc h2{
     color:#DC143C;
     font-size:35px;
-    font-weight: 900;
+    font-weight: 800;
 }
 .social-icon {
     width: 40%;
@@ -50,8 +50,12 @@ p{
 #service{
     background-color: #F1F1F1;
 }
-#service h5{
+#service h2{
+  font-weight: 700;
+}
+#service h5 {
     font-size: 25px;
+    font-weight: 600;
 }
 .main-title{
     font-size:25px ;
@@ -68,8 +72,7 @@ p{
     line-height: 100px;
     margin: 25px auto 25px;
     text-align: center;
-    transition: all 0.5s;
-    transition: all .5s ease-in-out;
+    transition: all .5s;
 
   }
 
@@ -80,16 +83,21 @@ p{
   .icon::after{
     content: "";
     position:absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+    padding: 20px;
+    transition: all .5s;
+
+}
+  .service-item:hover .icon:after{
+    border: #DC143C 4px solid; 
     width: 120px;
     height: 120px;
     left: -10px;
     top: -10px;
-    border-radius: 50%;
-    padding: 20px;
-    transition: all .2s;
-}
-  .service-item:hover .icon:after{
-    border: #DC143C 4px solid;
   }
   .service-item h5 {
     font-size: 1.5rem;

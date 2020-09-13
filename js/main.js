@@ -30,7 +30,7 @@ $(window).scroll(function () {
 
     if ($(window).scrollTop()+125 >= $(this).offset().top)
     {
-      var secId ="'"+'#'+$(this).attr('id')+"'";
+      let secId ="'"+'#'+$(this).attr('id')+"'";
       $('nav li a').removeClass('active');
       $(`nav li a[href=${secId}`).addClass('active');
     }

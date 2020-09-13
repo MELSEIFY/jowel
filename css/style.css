@@ -24,6 +24,10 @@ li:active a
     color: #DC143C !important;
     font-weight: 400 !important;
 }
+.active{
+  color: #DC143C !important;
+
+}
 .nav-item .nav-link:hover
 {
     color: #DC143C !important;

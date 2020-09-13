@@ -1,20 +1,38 @@
-$("#lastSection input, #textArea").click(function () {	
-    $(this).css("border-bottom", "1px red solid");	
-  })	
+// essam function
 
-$("#lastSection input, #textArea").blur(function () {	
-    $(this).css("border-bottom", "1px #ced4da solid");	
-});	
+$("#lastSection input, #textArea").click(function () {
+  $(this).css("border-bottom", "1px red solid");
+})
 
+$("#lastSection input, #textArea").blur(function () {
+  $(this).css("border-bottom", "1px #ced4da solid");
+});
 
-$("a[href^='#']").click(function(){
+//salah function
+$("a[href^='#']").click(function () {
 
   let aHerf = $(this).attr("href");
 
-  let sectionOffset = $(aHerf).offset().top-70;
+  let sectionOffset = $(aHerf).offset().top - 70;
 
-  $("html,body").animate( {scrollTop:sectionOffset} , 2000);
+  $("html,body").animate({ scrollTop: sectionOffset }, 1000);
 
 });
 
+// mohamed sami funcion
+$("a").click(function () {
+  $(this).addClass('active').parent().siblings().find("a[href^='#']").removeClass('active')
+})
 
+$(window).scroll(function () {
+
+  $('section').each(function () {
+
+    if ($(window).scrollTop()+125 >= $(this).offset().top)
+    {
+      var secId ="'"+'#'+$(this).attr('id')+"'";
+      $('nav li a').removeClass('active');
+      $(`nav li a[href=${secId}`).addClass('active');
+    }
+  })
+})

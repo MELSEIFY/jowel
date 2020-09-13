@@ -18,3 +18,42 @@ $("a[href^='#']").click(function(){
 });
 
 
+
+// ====== Mahmoud Ezat section ======== 
+
+
+
+
+$(document).ready(function(){
+ $(".forloading").fadeOut( 2000 , function(){
+   $("html,body").css({overflow : "auto"})
+ });
+})
+
+
+$(window).scroll(function(){
+
+  var myScrollTop = $(window).scrollTop()  ;
+ 
+  if( myScrollTop >= 650)
+  {
+      $(".swipUp").fadeIn(650)
+  }
+  else
+  {
+      $(".swipUp").fadeOut(650)
+  }
+  
+
+})
+
+
+$(".swipUp").click(function(){
+
+  $("html , body").animate( {scrollTop : "0"} ,500 )
+})
+
+
+// ====== Mahmoud Ezat section ======== 
+
+

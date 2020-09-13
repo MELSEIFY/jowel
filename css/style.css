@@ -81,7 +81,7 @@ li:active a
 }
 .home .carousel-item img
 {
-    background-blend-mode: overlay;
+    opacity:.9;
 }
 .carousel-indicators li 
 {

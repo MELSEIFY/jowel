@@ -245,7 +245,7 @@ text-transform: uppercase;
   font-size: 15px;
 }
 /* =================================Review SECTION=============================================== */
-#reviewSection{
+#reviews{
   background-image: url(../image/review-bg.jpg);
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, .5);

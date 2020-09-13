@@ -10,18 +10,14 @@ $("#lastSection input, #textArea").blur(function () {
 
 //salah function
 $("a[href^='#']").click(function () {
-
   let aHerf = $(this).attr("href");
-
   let sectionOffset = $(aHerf).offset().top - 70;
-
   $("html,body").animate({ scrollTop: sectionOffset }, 1000);
-
 });
 
 // mohamed sami funcion
 $("a").click(function () {
-  $(this).addClass('active').parent().siblings().find("a[href^='#']").removeClass('active')
+  $(this).addClass('active').parent().siblings().find("a").removeClass('active')
 })
 
 $(window).scroll(function () {

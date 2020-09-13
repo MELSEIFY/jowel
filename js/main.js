@@ -11,7 +11,7 @@ $("a[href^='#']").click(function(){
 
   let aHerf = $(this).attr("href");
 
-  let sectionOffset = $(aHerf).offset().top;
+  let sectionOffset = $(aHerf).offset().top-70;
 
   $("html,body").animate( {scrollTop:sectionOffset} , 2000);
 

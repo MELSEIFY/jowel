@@ -83,8 +83,9 @@ li:active a
   opacity: 1;
   transition: 0.5s ease;
   background-color: rgba(0, 0, 0, 0.7);
-  overflow: hidden;
-}
+  overflow: hidden;}
+
+
 .carousel-indicators li 
 {
     width: 10px;
@@ -246,7 +247,7 @@ text-transform: uppercase;
   font-size: 15px;
 }
 /* =================================Review SECTION=============================================== */
-#reviewSection{
+#reviews{
   background-image: url(../image/review-bg.jpg);
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, .5);

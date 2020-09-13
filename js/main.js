@@ -1,23 +1,30 @@
-$("#lastSection input, #textArea").click(function () {	
-    $(this).css("border-bottom", "1px red solid");	
-  })	
+// essam function
 
-$("#lastSection input, #textArea").blur(function () {	
-    $(this).css("border-bottom", "1px #ced4da solid");	
-});	
+$("#lastSection input, #textArea").click(function () {
+  $(this).css("border-bottom", "1px red solid");
+})
 
-
-$("a[href^='#']").click(function(){
-
-  let aHerf = $(this).attr("href");
-
-  let sectionOffset = $(aHerf).offset().top-70;
-
-  $("html,body").animate( {scrollTop:sectionOffset} , 2000);
-
+$("#lastSection input, #textArea").blur(function () {
+  $(this).css("border-bottom", "1px #ced4da solid");
 });
 
+//salah function
+$("a[href^='#']").click(function () {
+  let aHerf = $(this).attr("href");
+  let sectionOffset = $(aHerf).offset().top - 70;
+  $("html,body").animate({ scrollTop: sectionOffset }, 1000);
+});
 
+// mohamed sami funcion
+$("a").click(function () {
+  $(this).addClass('active').parent().siblings().find("a").removeClass('active')
+})
+
+$(window).scroll(function () {
+
+  $('section').each(function () {
+
+<<<<<<< HEAD
 
 // ====== Mahmoud Ezat section ======== 
 
@@ -57,3 +64,13 @@ $(".swipUp").click(function(){
 // ====== Mahmoud Ezat section ======== 
 
 
+=======
+    if ($(window).scrollTop()+125 >= $(this).offset().top)
+    {
+      let secId ="'"+"#"+$(this).attr('id')+"'";
+      $('nav li a').removeClass('active');
+      $(`nav li a[href=${secId}`).addClass('active');
+    }
+  })
+})
+>>>>>>> e53e9f70ec03599d26b191618dc4161119831843

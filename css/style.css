@@ -1,4 +1,124 @@
 
+/*Mohamed Salah*/
+
+/*Start Navbar*/
+
+.navbar
+{
+    background-color: rgba(0, 0, 0, .9);
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+    padding: 0;
+    z-index: 99999;
+}
+.navbar-nav
+{
+    font-weight: 600;
+}
+.nav-item .nav-link 
+{
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+li:active a
+{
+    color: #DC143C !important;
+    font-weight: 400 !important;
+}
+.nav-item .nav-link:hover
+{
+    color: #DC143C !important;
+    font-weight: 400 !important;
+}
+.menu-btn
+{
+    background-color: #DC143C;
+    color: #fff;
+}
+.menu-btn:hover
+{
+    background-color: transparent !important;
+    color: #DC143C;
+    border: #DC143C 1px solid;
+}
+.slider-btn
+{
+    background-color: #DC143C;
+    color: #fff;
+    transition: all .5s ease-in-out; 
+}
+.slider-btn:hover
+{
+    background-color: rgba(0, 0, 0, .6) !important;
+    color: #DC143C;
+    border: #DC143C 1px solid;
+}
+.slide-btn
+{
+    background-color: #DC143C;
+    color: #fff;
+    transition: all .5s ease-in-out; 
+}
+.slide-btn:hover
+{
+    background-color: rgba(0, 0, 0, .3) !important ;
+    color: #DC143C;
+    border: #DC143C 1px solid;
+}
+.carousel-caption
+{
+    bottom: 35%;
+}
+.txt-left
+{
+    left: 9%;
+}
+
+/*Start Header*/
+.home .overlay
+{
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+}
+.home .carousel-item img
+{
+    opacity: .9;
+}
+.carousel-indicators li 
+{
+    width: 10px;
+    height: 10px;
+    background-color: #DC143C;
+}
+.carousel-control-prev
+{
+    background: #aaa none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 22px;
+    height: 40px;
+    line-height: 35px;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    left: 3rem;
+}
+.carousel-control-next
+{
+    background: #aaa none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 22px;
+    height: 40px;
+    line-height: 35px;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    right: 3rem;
+}
+
 
 /* mohamed sami's About section */
 h1,h2,h3,h4,h5,h6{
@@ -41,7 +161,7 @@ p{
       transition: all .5s;
   }
   .btn:hover{
-    background-color: #fff;
+    background-color: transparent;
     color: #DC143C;
     border: #DC143C 1px solid;
   }

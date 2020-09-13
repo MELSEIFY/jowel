@@ -21,7 +21,7 @@ $("a[href^='#']").click(function () {
 
 // mohamed sami funcion
 $("a").click(function () {
-  $(this).addClass('active').parent().siblings().find("a[href^='#']").removeClass('active')
+  $(this).addClass('active').parent().siblings().find("a").removeClass('active')
 })
 
 $(window).scroll(function () {

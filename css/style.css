@@ -130,9 +130,9 @@ li:active a
 
 @media screen and(max-width:992px)
 {
-    .carousel-control-next
+    .carousel-control-next,.carousel-control-prev
     {
-        display:none;
+        display:none !important;
     }
 }
 

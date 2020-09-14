@@ -23,8 +23,15 @@ $("a").click(function () {
 $(window).scroll(function () {
 
   $('section').each(function () {
+       if ($(window).scrollTop()+125 >= $(this).offset().top)
+    {
+      let secId ="'"+"#"+$(this).attr('id')+"'";
+      $('nav li a').removeClass('active');
+      $(`nav li a[href=${secId}`).addClass('active');
+    }
+  })
+})
 
-<<<<<<< HEAD
 
 // ====== Mahmoud Ezat section ======== 
 
@@ -64,13 +71,3 @@ $(".swipUp").click(function(){
 // ====== Mahmoud Ezat section ======== 
 
 
-=======
-    if ($(window).scrollTop()+125 >= $(this).offset().top)
-    {
-      let secId ="'"+"#"+$(this).attr('id')+"'";
-      $('nav li a').removeClass('active');
-      $(`nav li a[href=${secId}`).addClass('active');
-    }
-  })
-})
->>>>>>> e53e9f70ec03599d26b191618dc4161119831843

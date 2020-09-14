@@ -39,7 +39,7 @@ $(window).scroll(function () {
 
 
 $(document).ready(function(){
- $(".forloading").fadeOut( 2000 , function(){
+ $(".forloading").fadeOut( 1000 , function(){
    $("html,body").css({overflow : "auto"})
  });
 })

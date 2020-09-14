@@ -247,15 +247,16 @@ p{
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: sienna;
+    background-color:#CA173B;
     z-index: 999999999;
 }
 
 .sk-chase {
     width: 40px;
     height: 40px;
-    top:370px;
-    left: 750px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     position: relative;
     animation: sk-chase 2.5s infinite linear both;
   }
@@ -419,7 +420,6 @@ p{
 
 
 
-  }
 /* ====================Abdallah Styles============== */
 a{
   text-decoration: none !important;

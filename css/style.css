@@ -128,14 +128,6 @@ li:active a
     right: 3rem;
 }
 
-@media screen and(max-width:992px)
-{
-    .carousel-control-next,.carousel-control-prev
-    {
-        display:none !important;
-    }
-}
-
 /* mohamed sami's About section */
 h1,h2,h3,h4,h5,h6{
     font-family: 'Raleway';

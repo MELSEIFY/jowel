@@ -18,6 +18,15 @@ $("a[href^='#']").click(function(){
 });
 
 
+  $('section').each(function () {
+       if ($(window).scrollTop()+125 >= $(this).offset().top)
+    {
+      let secId ="'"+"#"+$(this).attr('id')+"'";
+      $('nav li a').removeClass('active');
+      $(`nav li a[href=${secId}`).addClass('active');
+    }
+  });
+
 
 // ====== Mahmoud Ezat section ======== 
 
